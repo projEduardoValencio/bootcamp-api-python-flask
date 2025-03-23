@@ -2,11 +2,7 @@ from flask import Flask
 
 app = Flask(__name__)
 
-@app.route("/")
-def inicio():
-    return 'Bem Vindo ao Bootcamp API'
+from routes import *
 
-@app.route("/alunos")
-def get_alunos():
-    alunos = ['Marcos', 'Maicon', 'Murilo']
-    return alunos
+if __name__ == "__main__":
+    app.run()
