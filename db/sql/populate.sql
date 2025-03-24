@@ -1,29 +1,5 @@
 BEGIN TRANSACTION;
-CREATE TABLE IF NOT EXISTS "Aluno" (
-	"cpf"	INTEGER,
-	"matricula"	VARCHAR NOT NULL,
-	"nome"	VARCHAR NOT NULL,
-	"data_nascimento"	VARCHAR NOT NULL,
-	"telefone"	VARCHAR NOT NULL,
-	"email"	VARCHAR NOT NULL,
-	"status"	INTEGER NOT NULL DEFAULT (1),
-	PRIMARY KEY("cpf")
-);
-CREATE TABLE IF NOT EXISTS "Curso" (
-	"id"	INTEGER,
-	"nome"	VARCHAR NOT NULL,
-	"turno"	VARCHAR NOT NULL,
-	"carga_horaria"	INTEGER NOT NULL,
-	PRIMARY KEY("id" AUTOINCREMENT)
-);
-CREATE TABLE IF NOT EXISTS "AlunoCurso" (
-	"id"		INTEGER,
-	"aluno_cpf"	INTEGER NOT NULL,
-	"curso_id"	INTEGER NOT NULL,
-	PRIMARY KEY("id" AUTOINCREMENT),
-	FOREIGN KEY("aluno_cpf") REFERENCES "Aluno"("cpf"),
-	FOREIGN KEY("curso_id") REFERENCES "Curso"("id")
-);
+
 INSERT INTO "Aluno" VALUES (12345678912,'2312024156716','Mauro Carvalho dos Santos','09/08/2000','14991238911','mauro2013@gmail.com',1);
 INSERT INTO "Aluno" VALUES (39481220012,'2312024159235','Ana Carla do Amaral','30/07/2003','14982120031','anacm23@outlook.com',1);
 INSERT INTO "Aluno" VALUES (92188123931,'2312023154544','Pedro Soares Santos','06/10/1998','21992341077','pedrosantos5@yahoo.com.br',0);
@@ -51,4 +27,5 @@ INSERT INTO "AlunoCurso"("aluno_cpf", "curso_id") VALUES (99288222211,83999);
 INSERT INTO "AlunoCurso"("aluno_cpf", "curso_id") VALUES (93003200278,55691);
 INSERT INTO "AlunoCurso"("aluno_cpf", "curso_id") VALUES (93003200278,83999);
 INSERT INTO "AlunoCurso"("aluno_cpf", "curso_id") VALUES (78199209266,91108);
+
 COMMIT;

@@ -4,7 +4,7 @@ from main import app
 def inicio():
     return 'Bem Vindo ao Bootcamp API'
 
-@app.route("/alunos")
+@app.route("/alunos", methods=["GET"])
 def get_alunos():
-    alunos = ['Marcos', 'Maicon', 'Murilo']
-    return alunos
+    # alunos = ['Marcos', 'Maicon', 'Murilo']
+    return 'NULL'
