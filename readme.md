@@ -72,3 +72,13 @@ Rodar o script para iniciar o programa junto da configuração da base de dados
 > Importante analisar o código do script para entender os comandos executados, o mesmo comando pode ser rodado diretamente pelo terminal
 
 Lembrando que também é possível rodar o comando da seção [Linux ou Git](#linux-ou-git---bash) basta ter instalado o Git com o Git Bash.
+
+## Contribuição
+
+Para contribuir com o projeto:
+
+1. Faça um fork do repositório
+2. Crie uma branch para sua feature (`git checkout -b feat/nova-funcionalidade`)
+3. Faça commit das suas alterações (`git commit -m 'Adiciona nova funcionalidade'`)
+4. Faça push para a branch (`git push origin feat/nova-funcionalidade`)
+5. Abra um Pull Request
