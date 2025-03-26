@@ -2,7 +2,6 @@
 
 Projeto desenvolvido para disciplina de `Bootcamp Desenvolvimento e Projetos de Sistema` pelo `Grupo 1`
 
-
 ## Pré Requisitos
 - [Git](https://git-scm.com/downloads) - Para baixar o projeto e fazer o versionamento do código
 - [Python 3.12+](https://www.python.org/downloads/) - Executa o código
@@ -72,6 +71,20 @@ Rodar o script para iniciar o programa junto da configuração da base de dados
 > Importante analisar o código do script para entender os comandos executados, o mesmo comando pode ser rodado diretamente pelo terminal
 
 Lembrando que também é possível rodar o comando da seção [Linux ou Git](#linux-ou-git---bash) basta ter instalado o Git com o Git Bash.
+
+## Documentação da API - Swagger
+
+A API possui documentação interativa utilizando Swagger UI. Após iniciar a aplicação, você pode acessar a documentação em:
+
+```
+http://localhost:5000/swagger
+```
+
+Recursos da documentação Swagger:
+- Visualização de todos os endpoints disponíveis
+- Descrição detalhada de cada rota
+- Modelos de requisição e resposta
+- Possibilidade de testar os endpoints diretamente pela interface
 
 ## Contribuição
 
